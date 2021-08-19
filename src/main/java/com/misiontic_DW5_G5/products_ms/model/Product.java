@@ -14,12 +14,12 @@ public class Product {
     @Column(name="product_category")
     private String category;
     @Column(name="product_price")
-    private float price;
+    private int price;
 
     public Product() {
     }
 
-    public Product(String productName, String category, float price) {
+    public Product(String productName, String category, int price) {
         this.productName = productName;
         this.category = category;
         this.price = price;
@@ -48,11 +48,11 @@ public class Product {
         this.category = category;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 }
