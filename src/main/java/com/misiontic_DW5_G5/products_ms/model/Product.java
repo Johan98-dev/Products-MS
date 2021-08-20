@@ -22,9 +22,10 @@ public class Product {
     public Product() {
     }
 
-    public Product(String productName, String category, int price) {
+    public Product(String productName, String category, int stock, int price) {
         this.productName = productName;
         this.category = category;
+        this.stock = stock;
         this.price = price;
     }
     public int getId() {
@@ -49,6 +50,14 @@ public class Product {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
     public int getPrice() {
