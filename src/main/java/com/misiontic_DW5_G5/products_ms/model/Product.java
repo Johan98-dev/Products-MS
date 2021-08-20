@@ -13,8 +13,11 @@ public class Product {
     private String productName;
     @Column(name="product_category")
     private String category;
+    @Column(name="product_stock")
+    private int stock;
     @Column(name="product_price")
     private int price;
+
 
     public Product() {
     }
